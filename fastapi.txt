@@ -1,0 +1,12 @@
+Как получить данные из пост запроса:
+1.  def create_posts(payload: dict = Body(...)) 
+    payload: dict = Body(...) - в переменную payload будет сохранен словарь с данными из Body
+2.  Pydantic(рекомендуемый):
+    from pydantic import BaseModel
+    
+    class {name}:
+        {name}: {datatype}
+
+    @app.post("/post")
+    def get_data(new_post: {name of class})
+        return new_post.{any attribute of the class}
