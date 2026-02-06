@@ -4,7 +4,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor 
 import time
 
-pswd = "22Jager@05!"
+pswd = "blabla"
 app = FastAPI()
 
 while True:
